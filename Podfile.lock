@@ -628,6 +628,16 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - AppCenter (5.0.3):
+    - AppCenter/Analytics (= 5.0.3)
+    - AppCenter/Crashes (= 5.0.3)
+  - AppCenter/Analytics (5.0.3):
+    - AppCenter/Core
+  - AppCenter/Core (5.0.3)
+  - AppCenter/Crashes (5.0.3):
+    - AppCenter/Core
+  - AppCenter/Distribute (5.0.3):
+    - AppCenter/Core
   - BoringSSL-GRPC (0.0.24):
     - BoringSSL-GRPC/Implementation (= 0.0.24)
     - BoringSSL-GRPC/Interface (= 0.0.24)
@@ -838,6 +848,8 @@ PODS:
     - PromisesObjC (= 2.2.0)
 
 DEPENDENCIES:
+  - AppCenter
+  - AppCenter/Distribute
   - Firebase
   - FirebaseAnalytics
   - FirebaseAuth
@@ -855,6 +867,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
+    - AppCenter
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -880,6 +893,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
+  AppCenter: a4070ec3d4418b5539067a51f57155012e486ebd
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
   Firebase: 07150e75d142fb9399f6777fa56a187b17f833a0
   FirebaseAnalytics: 0270389efbe3022b54ec4588862dabec3477ee98
@@ -903,6 +917,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   PromisesSwift: cf9eb58666a43bbe007302226e510b16c1e10959
 
-PODFILE CHECKSUM: c9d0c4158ba6a840f634e3acdf4f6784d6a0470a
+PODFILE CHECKSUM: 0b80f0f6aabb5481fd05d8e181451f9b6473fcab
 
 COCOAPODS: 1.12.1

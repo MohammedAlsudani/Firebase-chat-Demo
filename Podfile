@@ -4,6 +4,9 @@ target 'Firebase chat Demo' do
 
   # Pods for Firebase chat Demo
   
+  pod 'AppCenter'
+  pod 'AppCenter/Distribute'
+
   
   # Add the Firebase pod for Google Analytics
   pod 'Firebase', :modular_headers => true
