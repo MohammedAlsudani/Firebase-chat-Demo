@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let title = "⚡️FirebaseChat"
+        let title = K.app_name
         var charIndex = 0.0
         for letter in title {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in

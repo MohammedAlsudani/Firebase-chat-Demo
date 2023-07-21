@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004301002A6A4C280084E7B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004300FF2A6A4C280084E7B7 /* Constants.swift */; };
+		004301032A6A669B0084E7B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004301022A6A669B0084E7B7 /* Message.swift */; };
 		00811BC12A6527B600A3264C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00811BC02A6527B600A3264C /* AppDelegate.swift */; };
 		00811BC32A6527B600A3264C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00811BC22A6527B600A3264C /* SceneDelegate.swift */; };
 		00811BC82A6527B600A3264C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00811BC62A6527B600A3264C /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004300FF2A6A4C280084E7B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		004301022A6A669B0084E7B7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		00811BBD2A6527B600A3264C /* Firebase chat Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase chat Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00811BC02A6527B600A3264C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00811BC22A6527B600A3264C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004301012A6A4C330084E7B7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				004300FF2A6A4C280084E7B7 /* Constants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		00811BB42A6527B600A3264C = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 				00811BF22A652DC700A3264C /* Models */,
 				00811BF12A652DA600A3264C /* Views */,
 				00811BF02A652D9100A3264C /* Controllers */,
+				004301012A6A4C330084E7B7 /* utils */,
 				00811BC92A6527B900A3264C /* Assets.xcassets */,
 				00B9306E2A6691C400B8DB51 /* GoogleService-Info.plist */,
 				00811BCE2A6527B900A3264C /* Info.plist */,
@@ -166,6 +179,7 @@
 		00811BF22A652DC700A3264C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				004301022A6A669B0084E7B7 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -367,6 +381,8 @@
 				00811BF82A6538C700A3264C /* WelcomeViewController.swift in Sources */,
 				00811BC12A6527B600A3264C /* AppDelegate.swift in Sources */,
 				00811BFA2A6538E300A3264C /* LoginViewController.swift in Sources */,
+				004301002A6A4C280084E7B7 /* Constants.swift in Sources */,
+				004301032A6A669B0084E7B7 /* Message.swift in Sources */,
 				00811BFC2A65391500A3264C /* ChatViewController.swift in Sources */,
 				00811BC32A6527B600A3264C /* SceneDelegate.swift in Sources */,
 			);
@@ -601,8 +617,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB7L2DTX5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
@@ -622,6 +640,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB7L2DTX5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
@@ -640,6 +659,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB7L2DTX5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.materialuiux.Firebase-chat-DemoUITests";

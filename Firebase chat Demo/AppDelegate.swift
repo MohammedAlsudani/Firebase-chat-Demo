@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        AppCenter.start(withAppSecret: "-", services: [Distribute.self])
+        AppCenter.start(withAppSecret: "bbea2603-d4a4-42cd-936f-2e479252d55c", services: [Distribute.self])
         return true
     }
 
