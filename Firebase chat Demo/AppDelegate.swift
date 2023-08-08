@@ -9,13 +9,20 @@ import UIKit
 import FirebaseCore
 import AppCenter
 import AppCenterDistribute
+import Firebase
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        Firestore.firestore()
         AppCenter.start(withAppSecret: "bbea2603-d4a4-42cd-936f-2e479252d55c", services: [Distribute.self])
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+    
         return true
     }
 
